@@ -1,1 +1,19 @@
+USERNAME = "admin"
+PASSWORD = "1234"
+
+def login():
+    print("=== Welcome to the Login System ===")
+    
+    # Prompt user for credentials
+    input_username = input("Enter username: ")
+    input_password = input("Enter password: ")
+
+    # Check credentials
+    if input_username == USERNAME and input_password == PASSWORD:
+        print("✅ Login successful! Welcome,", USERNAME)
+    else:
+        print("❌ Login failed. Incorrect username or password.")
+
+# Run the login function
+login()
 
